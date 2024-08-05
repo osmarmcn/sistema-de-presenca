@@ -1,0 +1,248 @@
+{
+    "professores":[
+        {
+            "id":1,
+            "nome":"John",
+            "email":"john@gmail.com",
+            "senha":"1234"
+        },
+        {
+            "id":2,
+            "nome":"Ana",
+            "email":"ana@gmail.com",
+            "senha":"5678"
+
+        }
+    ],
+    
+    "monitores":[
+        {
+            "id":1,
+            "nome":"Joao",
+            "email":"joao@gmail.com",
+            "senha":"1235"
+        },
+        {
+            "id":2,
+            "nome":"Amanda",
+            "email":"amanda@gmail.com",
+            "senha":"5679"
+           
+        }
+    ],
+
+    "academico":[
+        {
+            "id":1,
+            "nome":"Maria",
+            "email":"maria@gmail.com",
+            "senha":"1236"
+        },
+        {
+            "id":2,
+            "nome":"Pedro",
+            "email":"pedro@gmail.com",
+            "senha":"5670"
+        }
+    ],
+
+    
+    "turmas": [
+            {
+                "turma1": [
+                    {
+                        "nome": "Ana Maria",
+                        "email": "ana@gmail.com",
+                        "notas": ["8.5", "7.0", "9.0", "8.0*2"],
+                        "media": 8.1,
+                        "status": "Aprovado",
+                        "frequencia": "90%",
+                        "faltas": 2
+                    },
+                    {
+                        "nome": "Carlos Silva",
+                        "email": "carlos@outlook.com.br",
+                        "notas": ["7.0", "6.5", "8.0", "6.0*2"],
+                        "media": 6.9,
+                        "status": "Recuperação",
+                        "frequencia": "85%",
+                        "faltas": 4
+                    },
+                    {
+                        "nome": "Mariana Oliveira",
+                        "email": "mariana@yahoo.com.br",
+                        "notas": ["9.0", "8.5", "7.5", "8.5*2"],
+                        "media": 8.4,
+                        "status": "Aprovado",
+                        "frequencia": "92%",
+                        "faltas": 1
+                    },
+                    {
+                        "nome": "João Pedro",
+                        "email": "joao@gmail.com",
+                        "notas": ["6.5", "7.0", "6.0", "7.0*2"],
+                        "media": 6.7,
+                        "status": "Recuperação",
+                        "frequencia": "80%",
+                        "faltas": 5
+                    },
+                    {
+                        "nome": "Luiza Fernandes",
+                        "email": "luiza@outlook.com.br",
+                        "notas": ["8.0", "8.5", "9.0", "9.5*2"],
+                        "media": 8.9,
+                        "status": "Aprovado",
+                        "frequencia": "95%",
+                        "faltas": 0
+                    },
+                    {
+                        "nome": "Felipe Santos",
+                        "email": "felipe@yahoo.com.br",
+                        "notas": ["7.5", "8.0", "7.0", "7.0*2"],
+                        "media": 7.3,
+                        "status": "Aprovado",
+                        "frequencia": "90%",
+                        "faltas": 2
+                    },
+                    {
+                        "nome": "Sofia Lima",
+                        "email": "sofia@gmail.com",
+                        "notas": ["6.0", "6.5", "7.0", "6.0*2"],
+                        "media": 6.3,
+                        "status": "Recuperação",
+                        "frequencia": "85%",
+                        "faltas": 3
+                    },
+                    {
+                        "nome": "Gabriel Costa",
+                        "email": "gabriel@outlook.com.br",
+                        "notas": ["9.0", "8.5", "8.0", "9.0*2"],
+                        "media": 8.7,
+                        "status": "Aprovado",
+                        "frequencia": "91%",
+                        "faltas": 1
+                    },
+                    {
+                        "nome": "Beatriz Almeida",
+                        "email": "beatriz@yahoo.com.br",
+                        "notas": ["7.0", "7.5", "6.5", "8.0*2"],
+                        "media": 7.4,
+                        "status": "Aprovado",
+                        "frequencia": "88%",
+                        "faltas": 3
+                    },
+                    {
+                        "nome": "Rafael Souza",
+                        "email": "rafael@gmail.com",
+                        "notas": ["8.5", "9.0", "8.0", "8.5*2"],
+                        "media": 8.5,
+                        "status": "Aprovado",
+                        "frequencia": "93%",
+                        "faltas": 1
+                    }
+                ]
+            },
+            {
+                "turma2": [
+                    {
+                        "nome": "Lara Rodrigues",
+                        "email": "lara@outlook.com.br",
+                        "notas": ["7.5", "8.0", "7.0", "7.0*2"],
+                        "media": 7.3,
+                        "status": "Aprovado",
+                        "frequencia": "90%",
+                        "faltas": 2
+                    },
+                    {
+                        "nome": "Vinicius Moreira",
+                        "email": "vinicius@yahoo.com.br",
+                        "notas": ["8.5", "9.0", "8.0", "8.5*2"],
+                        "media": 8.5,
+                        "status": "Aprovado",
+                        "frequencia": "92%",
+                        "faltas": 1
+                    },
+                    {
+                        "nome": "Aline Costa",
+                        "email": "aline@gmail.com",
+                        "notas": ["6.5", "7.0", "6.0", "6.5*2"],
+                        "media": 6.5,
+                        "status": "Recuperação",
+                        "frequencia": "85%",
+                        "faltas": 4
+                    },
+                    {
+                        "nome": "Thiago Rocha",
+                        "email": "thiago@outlook.com.br",
+                        "notas": ["7.0", "7.5", "6.5", "7.0*2"],
+                        "media": 7.0,
+                        "status": "Recuperação",
+                        "frequencia": "80%",
+                        "faltas": 5
+                    },
+                    {
+                        "nome": "Juliana Azevedo",
+                        "email": "juliana@yahoo.com.br",
+                        "notas": ["8.5", "7.0", "9.0", "8.0*2"],
+                        "media": 8.1,
+                        "status": "Aprovado",
+                        "frequencia": "91%",
+                        "faltas": 2
+                    },
+                    {
+                        "nome": "Rodrigo Martins",
+                        "email": "rodrigo@gmail.com",
+                        "notas": ["7.0", "6.5", "8.0", "7.0*2"],
+                        "media": 7.1,
+                        "status": "Aprovado",
+                        "frequencia": "88%",
+                        "faltas": 3
+                    },
+                    {
+                        "nome": "Fernanda Silva",
+                        "email": "fernanda@outlook.com.br",
+                        "notas": ["9.0", "8.5", "7.5", "8.0*2"],
+                        "media": 8.2,
+                        "status": "Aprovado",
+                        "frequencia": "93%",
+                        "faltas": 1
+                    },
+                    {
+                        "nome": "Lucas Alves",
+                        "email": "lucas@yahoo.com.br",
+                        "notas": ["6.5", "7.0", "6.0", "6.5*2"],
+                        "media": 6.5,
+                        "status": "Recuperação",
+                        "frequencia": "85%",
+                        "faltas": 4
+                    },
+                    {
+                        "nome": "Carolina Dias",
+                        "email": "carolina@gmail.com",
+                        "notas": ["8.0", "8.5", "9.0", "8.5*2"],
+                        "media": 8.5,
+                        "status": "Aprovado",
+                        "frequencia": "90%",
+                        "faltas": 2
+                    },
+                    {
+                        "nome": "Mateus Ribeiro",
+                        "email": "mateus@outlook.com.br",
+                        "notas": ["7.5", "8.0", "7.0", "7.0*2"],
+                        "media": 7.3,
+                        "status": "Aprovado",
+                        "frequencia": "89%",
+                        "faltas": 3
+                    }
+                ]
+            }
+        ]
+    
+    
+
+    
+    
+        
+}
+    
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="nome">Seja bem-vindo!</h1>
+            <div class="box-btn">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    Quadro geral
+                    </button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasExampleLabel">Quadro geral</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body canvas-box">
+                        <div class="box-container">
+                            <button id="frequencia">FREQUÊNCIA</button>
+                            <button id="relatorios">RELATÓRIOS</button>
+                            <button id="turmas">TURMAS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="btn-logout" class="btn-logout">Sair</button>
+
+            </div>
+
+        </div>
+    </header>
+   
+
+    <section id="main-container">
+        <section class="container-turma">
+            <div class="form-turma">
+                <h2>Cadastro de turma</h2>
+                <form id="form-cadastro-turma" class="form-cadastro-turma">
+                    <div class="criar-turma">
+                        <input type="text" placeholder="Criar turma" id="turma">
+                    </div>
+                </form>
+                
+                <div class="btn-turma">
+                    <button id="btn-criar">CRIAR</button>
+                </div>
+                <div id="notificacao" class="alert" role="alert" style="display: none;"></div>
+
+                <form action="" class="form-cadastro-aluno" id="form-cadastro-aluno">
+                    <div class="box">
+                        <label for="turma">turma</label>
+                        <select id="turma" name="turma">
+                            <option value="turma1">turma1</option>
+                            <option value="turma2">turma2</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <input type="nome" placeholder="Digite seu nome" id="nome" name="nome" required>
+                    </div>
+                    <div class="box">
+                        <input type="email" placeholder="Digite seu email" id="email" name="email" required>
+                    </div>
+                </form>
+
+                <div class="btn-aluno">
+                    <button>Cadastrar</button>
+                </div>
+                
+            </div>
+        </section>
+        
+
+       
+    
+            
+       
+        
+       
+
+    </section>
+   
+    
+
+    <script src="js/logout.js"></script>
+    <script src="js/transitionD.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
