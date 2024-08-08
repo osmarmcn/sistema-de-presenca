@@ -17,6 +17,8 @@ body{
     background: #efe9e9;
 }
 
+
+
 .form-container{
     width: 380px;
     height: 420px;
@@ -94,4 +96,9 @@ body{
 .button #btn:hover{
     border: 3px solid #fff;
 
+}
+
+#main-container {
+    border: 1px solid red; /* Adicione uma borda temporária para verificação */
+    background-color: lightgrey; /* Adicione um fundo temporário */
 }

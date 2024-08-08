@@ -1,39 +1,35 @@
-document.getElementById('btn').addEventListener('click', enviar)
+document.getElementById('btn').addEventListener('click', enviar);
 
 async function enviar() {
-    let formulario = document.getElementById('form')
-
-    const dados = new FormData(formulario)
-
-    const dadosObj = {}
+    let formulario = document.getElementById('form');
+    const dados = new FormData(formulario);
+    const dadosObj = {};
+    
     for (let [chave, valor] of dados.entries()) {
-        dadosObj[chave] = valor
+        dadosObj[chave] = valor;
     }
 
-    const { cargo, email, senha } = dadosObj
-
     try {
-        const resposta = await fetch('./db.json')
-        const db = await resposta.json()
+        const resposta = await fetch('http://localhost:8080/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dadosObj)
+        });
 
-        let usuario = null
-        if (cargo === 'professor') {
-            usuario = db.professores.find(professor => professor.email === email && professor.senha === senha)
-        } else if (cargo === 'monitor') {
-            usuario = db.monitores.find(monitor => monitor.email === email && monitor.senha === senha)
-        } else if (cargo === 'academico') {
-            usuario = db.academico.find(acad => acad.email === email && acad.senha === senha)
-        }
+        const resultado = await resposta.json();
+        console.log(resultado)
 
-        if (usuario) {
-            console.log('Login bem-sucedido!')
-            localStorage.setItem('AcessoUsuario', JSON.stringify(usuario));
-            window.location.href = 'dashboard.html'
+        if (resultado.success) {
+            console.log('Login bem-sucedido!');
+            localStorage.setItem('AcessoUsuario', JSON.stringify(resultado.usuario));
+            window.location.href = 'dashboard.html';
         } else {
-            console.error('Acesso inválido')
-         
+            console.error('Acesso inválido: ', resultado.message);
+            alert('Acesso inválido');
         }
     } catch (erro) {
-        console.error(erro)
+        console.error('Erro ao enviar solicitação:', erro);
     }
 }

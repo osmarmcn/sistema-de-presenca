@@ -91,7 +91,7 @@
     flex-direction: column;
     gap: 2rem;
 
-    display: none;
+    /* display: none; */
 
 }
 
@@ -113,7 +113,7 @@
 
 /* ---------------------------------------------Cadastro turma ------------------------------------ */
 
-.container-turma{
+/* .container-turma{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -237,3 +237,5 @@
     color: #fff;
     border: 3px solid #fff;
 }
+
+ */
