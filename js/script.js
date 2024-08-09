@@ -1,12 +1,12 @@
-document.getElementById('btn').addEventListener('click', enviar);
+document.getElementById('btn').addEventListener('click', enviar)
 
 async function enviar() {
-    let formulario = document.getElementById('form');
-    const dados = new FormData(formulario);
-    const dadosObj = {};
+    let formulario = document.getElementById('form')
+    const dados = new FormData(formulario)
+    const dadosObj = {}
     
     for (let [chave, valor] of dados.entries()) {
-        dadosObj[chave] = valor;
+        dadosObj[chave] = valor
     }
 
     try {
@@ -16,20 +16,20 @@ async function enviar() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(dadosObj)
-        });
+        })
 
-        const resultado = await resposta.json();
+        const resultado = await resposta.json()
         console.log(resultado)
 
         if (resultado.success) {
-            console.log('Login bem-sucedido!');
-            localStorage.setItem('AcessoUsuario', JSON.stringify(resultado.usuario));
-            window.location.href = 'dashboard.html';
+            console.log('Login bem-sucedido!')
+            localStorage.setItem('AcessoUsuario', JSON.stringify(resultado.usuario))
+            window.location.href = 'dashboard.html'
         } else {
-            console.error('Acesso inválido: ', resultado.message);
+            console.error('Acesso inválido: ', resultado.message)
             alert('Acesso inválido');
         }
     } catch (erro) {
-        console.error('Erro ao enviar solicitação:', erro);
+        console.error('Erro ao enviar solicitação:', erro)
     }
 }

@@ -9,6 +9,10 @@
 
 }
 
+h2{
+    padding: 1rem 2rem;
+}
+
 .header-container{
     width: 100%;
     background: #000;
@@ -113,7 +117,7 @@
 
 /* ---------------------------------------------Cadastro turma ------------------------------------ */
 
-/* .container-turma{
+.container-turma{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -127,6 +131,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
    
     gap: 3rem;
     border-radius: 8px;
@@ -238,4 +243,4 @@
     border: 3px solid #fff;
 }
 
- */
+
